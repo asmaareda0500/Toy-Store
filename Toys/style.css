@@ -1,0 +1,195 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navbar Styles */
+nav {
+    background-color: #ffcc00;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav .nav-links a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+nav .cart-icon {
+    cursor: pointer;
+}
+
+/* Main Section */
+#main {
+    text-align: center;
+    padding: 50px;
+    background-color: #ffcc00;
+    color: #fff;
+}
+
+#main h1 {
+    font-size: 48px;
+}
+
+#main p {
+    font-size: 24px;
+}
+
+/* Product Grid Styles */
+.product-section, .featured-section, .sale-section {
+    padding: 40px 10%;
+    text-align: center;
+}
+
+.product-section h2, .featured-section h2, .sale-section h2, .testimonials-section h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.product-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.product-card h3 {
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+.product-card button {
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.product-card button:hover {
+    background-color: #e6b800;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    background-color: #f4f4f4;
+    padding: 40px 10%;
+    text-align: center;
+}
+
+.testimonial {
+    margin-bottom: 30px;
+}
+
+.testimonial p {
+    font-style: italic;
+}
+
+/* Sale Section */
+.sale-section {
+    background-color: #fffcf0;
+}
+
+/* Contact Us Section */
+.contact-section {
+    background-color: #fff;
+    padding: 30px 10%;
+    text-align: center;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-section input, .contact-section textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact-section button {
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-section button:hover {
+    background-color: #e6b800;
+}
+
+/* Cart Section */
+.cart-section {
+    background-color: #fff;
+    padding: 30px 10%;
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+}
+
+.cart-section h2 {
+    text-align: center;
+    font-size: 24px;
+}
+
+.cart-section button {
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.cart-section button:hover {
+    background-color: #e6b800;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    background-color: #ffcc00;
+    padding: 20px;
+    font-size: 16px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

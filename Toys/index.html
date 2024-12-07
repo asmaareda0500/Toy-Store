@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toy Store</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">ToyStore</div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact</a>
+            <a href="#" class="cart-icon" onclick="toggleCart()">🛒 Cart (<span id="cart-count">0</span>)</a>
+        </div>
+    </nav>
+
+    <!-- Main Section -->
+    <section id="main">
+        <h1>Welcome to ToyStore</h1>
+        <p>Find the best toys for your kids!</p>
+       
+    </section>
+
+   
+    <!-- Product Grid -->
+    <section class="product-section">
+        <section class="about-us">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>Welcome to <strong>ToyStore</strong>, where dreams turn into adventures!</p>
+                <p>We are your perfect destination for the best toys that bring joy and fun into children's lives. Our mission is to offer a diverse collection of educational and entertaining toys designed to enhance creativity, cognitive, and motor skills for children of all ages.</p>
+                
+                <h2>Our Vision</h2>
+                <p>We believe that play is the key to nurturing young minds. Our goal is to be a partner in creating beautiful childhood memories and fostering imagination in a safe and fun environment.</p>
+                
+                <h2>Our Mission</h2>
+                <ul>
+                    <li>Providing high-quality and completely safe toys.</li>
+                    <li>Ensuring a smooth and enjoyable online shopping experience.</li>
+                    <li>Delivering exceptional customer service to ensure complete satisfaction.</li>
+                </ul>
+                
+                <h2>Why Choose Us?</h2>
+                <ul>
+                    <li><strong>Quality & Safety:</strong> All our toys meet strict safety standards for parents' peace of mind and children's safety.</li>
+                    <li><strong>Great Variety:</strong> We offer toys suitable for all ages and interests, from educational to entertaining.</li>
+                    <li><strong>Outstanding Customer Service:</strong> We're here to assist you every step of the way, from selecting the perfect toys to post-purchase support.</li>
+                </ul>
+                
+                <p>Thank you for choosing <strong>ToyStore</strong>. We strive to make every playtime an unforgettable memory!</p>
+                <p><em>For any inquiries or support, feel free to contact us!</em></p>
+            </div>
+        </section>
+        <div class="product-container">
+            <!-- Toy Cards Here -->
+        </div>
+    </section>
+
+    <!-- Featured Toys Section -->
+    <section class="featured-section">
+        <h2>Featured Toys</h2>
+        <div class="product-container">
+            <div class="product-card">
+                <img src="./images/21 of the Best Barbie Gift Ideas Your Child Will LOVE! - Barbie Christmas Gift Guide.jpeg" alt="Featured Toy 1">
+                <h3>Featured Toy 1</h3>
+                <p>Price: $20.00</p>
+                <button onclick="addToCart('Featured Toy 1', 20)">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="./images/download (2).jpeg" alt="Featured Toy 2">
+                <h3>Featured Toy 2</h3>
+                <p>Price: $25.00</p>
+                <button onclick="addToCart('Featured Toy 2', 25)">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="./images/download (3).jpeg" alt="Featured Toy 2">
+                <h3>Featured Toy 2</h3>
+                <p>Price: $25.00</p>
+                <button onclick="addToCart('Featured Toy 2', 25)">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="./images/Gear to Get You Through the Pandemic_ Our Portland Editor's Guide.jpeg" alt="Featured Toy 2">
+                <h3>Featured Toy 2</h3>
+                <p>Price: $25.00</p>
+                <button onclick="addToCart('Featured Toy 2', 25)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial">
+            <p>"Great selection of toys! My kids love their new toys!"</p>
+            <p>- Jane Doe</p>
+        </div>
+        <div class="testimonial">
+            <p>"Fast delivery and excellent customer service. Highly recommend!"</p>
+            <p>- John Smith</p>
+        </div>
+    </section>
+
+    <!-- Sale Section -->
+    <section class="sale-section">
+        <h2>Sale</h2>
+        <div class="product-container">
+            <div class="product-card">
+                <img src="./images/Let Kids Interact and Play with Little Live Pets Tweet Talking Birds - Mommy Kat and Kids.jpeg" alt="Sale Toy 1">
+                <h3>Sale Toy 1</h3>
+                <p><del>$15.00</del> <strong>$10.00</strong></p>
+                <button onclick="addToCart('Sale Toy 1', 10)">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="./images/TOP TRENZ OMG Pop Fidgety Bubble Fidget Toy Stress Relief Anxiety Boredom Keychain (Avocado) 13359.jpeg" alt="Sale Toy 2">
+                <h3>Sale Toy 2</h3>
+                <p><del>$50.00</del> <strong>$20.00</strong></p>
+                <button onclick="addToCart('Sale Toy 2', 20)">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="./images/MorisMos Giant Teddy Bear Purple, Big Teddy Bear Stuffed Animals Plush for Girlfriend Kids Christmas Valentine's Day Birthday, 47 Inches.jpeg" alt="Sale Toy 2">
+                <h3>Sale Toy 2</h3>
+                <p><del>$30.00</del> <strong>$20.00</strong></p>
+                <button onclick="addToCart('Sale Toy 2', 20)">Add to Cart</button>
+            </div>
+
+
+            <div class="product-card">
+                <img src="./images/Rubik's Cube Chest of Drawers.jpeg" alt="Sale Toy 2">
+                <h3>Sale Toy 2</h3>
+                <p><del>$40.00</del> <strong>$20.00</strong></p>
+                <button onclick="addToCart('Sale Toy 2', 20)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section class="contact-section">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Shopping Cart Section -->
+    <section id="cart" class="cart-section">
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div>
+        <p>Total: $<span id="cart-total">0.00</span></p>
+        <button onclick="checkout()">Checkout</button>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 ToyStore. All rights reserved.</p>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
